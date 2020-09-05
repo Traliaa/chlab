@@ -18,7 +18,7 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/go-fsnotify/fsnotify"
+	"github.com/fsnotify/fsnotify"
 
 	"github.com/juju/loggo"
 	"gopkg.in/alecthomas/kingpin.v1"
@@ -342,10 +342,10 @@ func MustRefresh() {
 		// User overrides (json)
 		addFile(dataPath+"/config.json", flat)
 
-		files, _ := ioutil.ReadDir(dataPath + "/etc/opt/ninja")
+		files, _ := ioutil.ReadDir(dataPath + "/etc/opt/chlab")
 		for _, f := range files {
 			if strings.HasSuffix(f.Name(), ".json") {
-				addFile(dataPath+"/etc/opt/ninja/"+f.Name(), flat)
+				addFile(dataPath+"/etc/opt/chlab/"+f.Name(), flat)
 			}
 		}
 
