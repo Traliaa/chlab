@@ -1,4 +1,4 @@
-package ninja
+package chlab
 
 //
 // Channel implementors should provide an implementation of this interface

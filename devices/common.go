@@ -1,16 +1,16 @@
 package devices
 
 import (
-	"github.com/ninjasphere/go-ninja/api"
-	"github.com/ninjasphere/go-ninja/logger"
-	"github.com/ninjasphere/go-ninja/model"
+	chlab "github.com/Traliaa/chlab/api"
+	"github.com/Traliaa/chlab/logger"
+	"github.com/Traliaa/chlab/model"
 )
 
 type baseDevice struct {
 	log       *logger.Logger
-	driver    ninja.Driver
+	driver    chlab.Driver
 	info      *model.Device
-	conn      *ninja.Connection
+	conn      *chlab.Connection
 	sendEvent func(event string, payload interface{}) error
 }
 
@@ -18,7 +18,7 @@ func (d *baseDevice) GetDeviceInfo() *model.Device {
 	return d.info
 }
 
-func (d *baseDevice) GetDriver() ninja.Driver {
+func (d *baseDevice) GetDriver() chlab.Driver {
 	return d.driver
 }
 
@@ -34,10 +34,10 @@ func (d *baseDevice) Log() *logger.Logger {
 // can do so without re-implementing all the Device methods themselves.
 
 type BaseDevice struct {
-	Driver ninja.Driver
+	Driver chlab.Driver
 	Info   *model.Device
 
-	Conn *ninja.Connection
+	Conn *chlab.Connection
 	Log_ *logger.Logger
 
 	SendEvent func(event string, payload interface{}) error
@@ -47,7 +47,7 @@ func (d *BaseDevice) GetDeviceInfo() *model.Device {
 	return d.Info
 }
 
-func (d *BaseDevice) GetDriver() ninja.Driver {
+func (d *BaseDevice) GetDriver() chlab.Driver {
 	return d.Driver
 }
 

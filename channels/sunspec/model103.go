@@ -1,7 +1,7 @@
 package sunspec
 
 import (
-	"github.com/ninjasphere/go-ninja/channels"
+	"github.com/Traliaa/chlab/channels"
 )
 
 type Model103 struct {

@@ -1,10 +1,10 @@
-package ninja
+package chlab
 
 import (
 	"fmt"
 	"time"
 
-	"github.com/ninjasphere/go-ninja/bus"
+	"github.com/Traliaa/chlab/bus"
 )
 
 type ServiceClient struct {

@@ -3,7 +3,7 @@
 package bugs
 
 import (
-	"github.com/ninjasphere/go-ninja/logger"
+	"github.com/Traliaa/chlab/logger"
 	"github.com/wolfeidau/bugsnag-go"
 )
 

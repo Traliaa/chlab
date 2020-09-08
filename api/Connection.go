@@ -1,4 +1,4 @@
-package ninja
+package chlab
 
 import (
 	"encoding/json"
@@ -9,12 +9,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ninjasphere/go-ninja/bus"
-	"github.com/ninjasphere/go-ninja/config"
-	"github.com/ninjasphere/go-ninja/logger"
-	"github.com/ninjasphere/go-ninja/model"
-	"github.com/ninjasphere/go-ninja/rpc"
-	"github.com/ninjasphere/go-ninja/rpc/json2"
+	"github.com/Traliaa/chlab/bus"
+	"github.com/Traliaa/chlab/config"
+	"github.com/Traliaa/chlab/logger"
+	"github.com/Traliaa/chlab/model"
+	"github.com/Traliaa/chlab/rpc"
+	"github.com/Traliaa/chlab/rpc/json2"
 )
 
 var (

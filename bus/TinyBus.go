@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/Traliaa/chlab/config"
+	"github.com/Traliaa/mqtt"
 	proto "github.com/huin/mqtt"
-	"github.com/ninjasphere/go-ninja/config"
-	"github.com/ninjasphere/mqtt"
 )
 
 type TinyBus struct {

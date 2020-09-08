@@ -9,8 +9,8 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/ninjasphere/go-ninja"
-	"github.com/ninjasphere/go-ninja/rpc2"
+	"github.com/Traliaa/chlab"
+	"github.com/Traliaa/chlab/rpc2"
 )
 
 type TestService struct {

@@ -11,9 +11,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ninjasphere/go-ninja/bus"
-	"github.com/ninjasphere/go-ninja/logger"
-	"github.com/ninjasphere/go-ninja/simtime"
+	"github.com/Traliaa/chlab/bus"
+	"github.com/Traliaa/chlab/logger"
+	"github.com/Traliaa/chlab/simtime"
 )
 
 var log = logger.GetLogger("rpc")

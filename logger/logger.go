@@ -7,8 +7,8 @@ import (
 	"os"
 	"path"
 
+	"github.com/Traliaa/chlab/config"
 	"github.com/juju/loggo"
-	"github.com/traliaa/chlab/config"
 	"github.com/wolfeidau/bugsnag-go"
 	"github.com/wolfeidau/loggo-syslog"
 )

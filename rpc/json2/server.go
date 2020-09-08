@@ -12,10 +12,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ninjasphere/go-ninja/bus"
-	"github.com/ninjasphere/go-ninja/logger"
-	"github.com/ninjasphere/go-ninja/rpc"
-	"github.com/ninjasphere/go-ninja/simtime"
+	"github.com/Traliaa/chlab/bus"
+	"github.com/Traliaa/chlab/logger"
+	"github.com/Traliaa/chlab/rpc"
+	"github.com/Traliaa/chlab/simtime"
 )
 
 var null = json.RawMessage([]byte("null"))

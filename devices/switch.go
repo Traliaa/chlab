@@ -1,10 +1,10 @@
 package devices
 
 import (
-	"github.com/ninjasphere/go-ninja/api"
-	"github.com/ninjasphere/go-ninja/channels"
-	"github.com/ninjasphere/go-ninja/logger"
-	"github.com/ninjasphere/go-ninja/model"
+	chlab "github.com/Traliaa/chlab/api"
+	"github.com/Traliaa/chlab/channels"
+	"github.com/Traliaa/chlab/logger"
+	"github.com/Traliaa/chlab/model"
 )
 
 type SwitchDevice struct {
@@ -40,7 +40,7 @@ func (d *SwitchDevice) ToggleOnOff() error {
 	return d.SetOnOff(!*d.state)
 }
 
-func CreateSwitchDevice(driver ninja.Driver, info *model.Device, conn *ninja.Connection) (*SwitchDevice, error) {
+func CreateSwitchDevice(driver chlab.Driver, info *model.Device, conn *chlab.Connection) (*SwitchDevice, error) {
 
 	d := &SwitchDevice{
 		baseDevice: baseDevice{

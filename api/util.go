@@ -1,4 +1,4 @@
-package ninja
+package chlab
 
 import (
 	"crypto/md5"
@@ -9,7 +9,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/ninjasphere/go-ninja/model"
+	"github.com/Traliaa/chlab/model"
 )
 
 func getGUID(in ...string) string {

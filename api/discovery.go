@@ -1,6 +1,6 @@
-package ninja
+package chlab
 
-import "github.com/ninjasphere/go-ninja/model"
+import "github.com/Traliaa/chlab/model"
 
 type discoverService struct {
 	conn *Connection

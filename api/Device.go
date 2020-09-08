@@ -1,7 +1,7 @@
-package ninja
+package chlab
 
 import (
-	"github.com/ninjasphere/go-ninja/model"
+	"github.com/Traliaa/chlab/model"
 )
 
 //

@@ -6,11 +6,11 @@ import (
 	"math"
 	"sync"
 
+	"github.com/Traliaa/chlab/api"
+	"github.com/Traliaa/chlab/channels"
+	"github.com/Traliaa/chlab/logger"
+	"github.com/Traliaa/chlab/model"
 	"github.com/lucasb-eyer/go-colorful"
-	"github.com/ninjasphere/go-ninja/api"
-	"github.com/ninjasphere/go-ninja/channels"
-	"github.com/ninjasphere/go-ninja/logger"
-	"github.com/ninjasphere/go-ninja/model"
 )
 
 var log = logger.GetLogger("LightDevice")
@@ -305,7 +305,7 @@ func (d *LightDevice) EnableTransitionChannel() error {
 	return d.conn.ExportChannel(d, d.transition, "transition")
 }
 
-func CreateLightDevice(driver ninja.Driver, info *model.Device, conn *ninja.Connection) (*LightDevice, error) {
+func CreateLightDevice(driver chlab.Driver, info *model.Device, conn *chlab.Connection) (*LightDevice, error) {
 
 	d := &LightDevice{
 		baseDevice: baseDevice{
