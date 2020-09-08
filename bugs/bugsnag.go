@@ -3,7 +3,6 @@
 package bugs
 
 import (
-	"github.com/Traliaa/chlab/logger"
 	"github.com/wolfeidau/bugsnag-go"
 )
 
@@ -12,7 +11,6 @@ func Configure(env, key string) {
 	bugsnag.Configure(bugsnag.Configuration{
 		APIKey:       key,
 		ReleaseStage: env,
-		Logger:       logger.GetBugsnagLogger("bugsnag"),
 	})
 
 }
