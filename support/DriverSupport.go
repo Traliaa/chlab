@@ -1,7 +1,7 @@
 package support
 
 import (
-	"github.com/ninjasphere/go-ninja/api"
+	"github.com/Traliaa/chlab/api"
 )
 
 //
@@ -54,7 +54,7 @@ type DriverSupport struct {
 //
 // This method should not be called until Init has been successfully called. Otherwise, it will
 // return a non-nil error.
-func (d *DriverSupport) Export(methods ninja.Driver) error {
+func (d *DriverSupport) Export(methods chlab.Driver) error {
 	err := failIfNotInitialized(&d.ModuleSupport)
 	if err == nil {
 		return d.Conn.ExportDriver(methods)

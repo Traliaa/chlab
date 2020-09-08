@@ -1,7 +1,7 @@
 package support
 
 import (
-	"github.com/ninjasphere/go-ninja/api"
+	"github.com/Traliaa/chlab/api"
 )
 
 //
@@ -52,7 +52,7 @@ type AppSupport struct {
 //
 // This method should not be called until Init has been successfully called. Otherwise, it will
 // return a non-nil error.
-func (a *AppSupport) Export(methods ninja.App) error {
+func (a *AppSupport) Export(methods chlab.App) error {
 	err := failIfNotInitialized(&a.ModuleSupport)
 	if err == nil {
 		return a.Conn.ExportApp(methods)

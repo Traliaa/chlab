@@ -5,8 +5,8 @@ import (
 	"runtime/debug"
 	"time"
 
-	"github.com/ninjasphere/go-ninja/config"
-	"github.com/ninjasphere/go-ninja/logger"
+	"github.com/Traliaa/chlab/config"
+	"github.com/Traliaa/chlab/logger"
 )
 
 var log = logger.GetLogger("simtime")

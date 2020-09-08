@@ -2,12 +2,11 @@ package support
 
 import (
 	"fmt"
-
 	"github.com/juju/loggo"
 
-	"github.com/ninjasphere/go-ninja/api"
-	"github.com/ninjasphere/go-ninja/logger"
-	"github.com/ninjasphere/go-ninja/model"
+	"github.com/Traliaa/chlab/api"
+	"github.com/Traliaa/chlab/logger"
+	"github.com/Traliaa/chlab/model"
 )
 
 // ModuleSupport is contains implementations of methods that are common to all modules whether they
@@ -16,7 +15,7 @@ import (
 type ModuleSupport struct {
 	Info   *model.Module
 	Log    *logger.Logger
-	Conn   *ninja.Connection
+	Conn   *chlab.Connection
 	sender func(event string, payload interface{}) error
 }
 
@@ -63,7 +62,7 @@ func (m *ModuleSupport) Init(info *model.Module) error {
 
 	m.Info = info
 
-	conn, err := ninja.Connect(info.ID)
+	conn, err := chlab.Connect(info.ID)
 	m.Conn = conn
 
 	return err

@@ -7,10 +7,10 @@ import (
 	"reflect"
 	"strings"
 
+	"github.com/Traliaa/chlab/config"
+	"github.com/Traliaa/chlab/logger"
+	"github.com/Traliaa/chlab/model"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/ninjasphere/go-ninja/config"
-	"github.com/ninjasphere/go-ninja/logger"
-	"github.com/ninjasphere/go-ninja/model"
 	"github.com/ninjasphere/gojsonschema"
 	"github.com/xeipuuv/gojsonreference"
 )

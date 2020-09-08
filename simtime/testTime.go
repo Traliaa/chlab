@@ -9,7 +9,7 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/ninjasphere/go-ninja/simtime"
+	"github.com/Traliaa/chlab/simtime"
 )
 
 func main() {
