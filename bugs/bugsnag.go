@@ -3,6 +3,7 @@
 package bugs
 
 import (
+	"github.com/ninjasphere/go-ninja/logger"
 	"github.com/wolfeidau/bugsnag-go"
 )
 
@@ -11,6 +12,7 @@ func Configure(env, key string) {
 	bugsnag.Configure(bugsnag.Configuration{
 		APIKey:       key,
 		ReleaseStage: env,
+		Logger:       logger.GetBugsnagLogger("bugsnag"),
 	})
 
 }
